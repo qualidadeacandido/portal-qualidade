@@ -127,7 +127,7 @@ export const TEAM: TeamMember[] = [
     name: "Adilson Soares",
     role: "Coordenador Corporativo",
     level: 1,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "/team/adilson.jpg",
     category: "Liderança Estratégica",
     email: "Qualidadejp@acandidotransportes.com.br"
   },
@@ -135,15 +135,15 @@ export const TEAM: TeamMember[] = [
     name: "Elinaldo Junior",
     role: "Analista Corporativo",
     level: 2,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    image: "/team/elinaldo.jpeg",
     category: "Análise Corporativa",
     email: "qualidade02jp@acandidotransportes.com.br"
   },
   {
-    name: "Caio",
+    name: "Caio Victor",
     role: "Supervisor Fretamento",
     level: 3,
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    image: "/team/caio.png",
     category: "Supervisão Operacional",
     email: "manutencaojp@transnacionalfretamento.com.br"
   },
@@ -151,7 +151,7 @@ export const TEAM: TeamMember[] = [
     name: "Renato",
     role: "Analista Fretamento",
     level: 3,
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+    image: "/team/renato.png",
     category: "Análise Operacional",
     email: "qualidadejp@transnacionalfretamento.com.br"
   }
