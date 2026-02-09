@@ -148,7 +148,7 @@ export const TEAM: TeamMember[] = [
     email: "manutencaojp@transnacionalfretamento.com.br"
   },
   {
-    name: "Renato",
+    name: "Renato Martins",
     role: "Analista Fretamento",
     level: 3,
     image: "/team/renato.png",
