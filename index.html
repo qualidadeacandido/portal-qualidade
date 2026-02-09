@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualidade Corporativa | Grupo A.Cândido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            background-color: #00194C;
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at 50% 50%, #002d8a 0%, #00194C 100%);
+        }
+        .tech-grid {
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .hero-text-reveal {
+            animation: reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes reveal {
+            0% { transform: translateY(40px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        
+        /* Animação de Pulso Forte para o Texto */
+        @keyframes strong-pulse {
+            0%, 100% { 
+                transform: scale(1);
+                filter: drop-shadow(0 0 0px rgba(241, 30, 38, 0));
+            }
+            50% { 
+                transform: scale(1.08);
+                filter: drop-shadow(0 0 25px rgba(241, 30, 38, 0.6));
+            }
+        }
+        .pulse-strong {
+            display: inline-block;
+            animation: strong-pulse 2s ease-in-out infinite;
+            will-change: transform, filter;
+        }
+
+        /* Efeito de Bloom Sutil para o Botão CTA */
+        .cta-pulse {
+            animation: cta-bloom 3s ease-in-out infinite;
+            position: relative;
+        }
+        @keyframes cta-bloom {
+            0% { 
+                box-shadow: 0 0 0 0 rgba(241, 30, 38, 0.4), 0 10px 20px rgba(0,0,0,0.1); 
+            }
+            50% { 
+                box-shadow: 0 0 25px 8px rgba(241, 30, 38, 0.35), 0 15px 30px rgba(241, 30, 38, 0.2); 
+            }
+            100% { 
+                box-shadow: 0 0 0 0 rgba(241, 30, 38, 0), 0 10px 20px rgba(0,0,0,0.1); 
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #00194C; }
+        ::-webkit-scrollbar-thumb { background: #F11E26; border-radius: 4px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@vercel/node": "https://esm.sh/@vercel/node@^5.5.32"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#00194C] text-[#00194C]">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
